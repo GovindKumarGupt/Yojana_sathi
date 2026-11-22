@@ -1,0 +1,12 @@
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+vectorstore/
+logs/
+eval/results.csv
+data/processed/*.json
+.streamlit/secrets.toml
+.DS_Store
+data/raw/pm_svanidhi/
