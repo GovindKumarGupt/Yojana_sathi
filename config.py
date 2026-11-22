@@ -14,8 +14,8 @@ CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
 # --- Folders and files ---
 RAW_FOLDER = "data/raw"                       # put PDFs here, one sub-folder per scheme
 CHUNKS_FILE = "data/processed/chunks.json"
-VECTOR_FOLDER = "vectorstore"
-COLLECTION_NAME = "schemes"
+VECTOR_FOLDER = "vectorstore"  #It's the folder where the app saves its Chroma vector database. 
+COLLECTION_NAME = "schemes" #collection inside the Chroma database. A collection is like a table. The chunks are stored and searched under this name, so ingestion and the chatbot must use the same one.
 LOG_FILE = "logs/queries.jsonl"
 
 # --- Schemes (sub-folder name in data/raw -> display name) ---
